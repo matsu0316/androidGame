@@ -41,10 +41,12 @@ class GameSystem {
         for(int i=0;i<enemiesStatus.size();i++){
             enemiesName.add("敵"+i);
         }
+        Log.d("name",enemiesName.get(0));
         //Log.d("lis",enemiesName.get(0));
         for(int i=0;i<enemiesStatus.size();i++){
             enemiesTmpInfo.put(enemiesName.get(i),enemiesStatus.get(i));
         }
+        Log.d("info",enemiesTmpInfo.toString());
         enemiesInfo.addAll(enemiesTmpInfo.entrySet());
     }
 }
